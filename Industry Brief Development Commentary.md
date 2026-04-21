@@ -51,7 +51,7 @@ This source was helpful for context, but it had limits because it did not tell m
 
 Epic’s Enhanced Input documentation was one of the most useful sources for the technical side of this work. Because Epic made Unreal Engine, this was the most reliable source for understanding how the input system was meant to work. It was especially relevant because controller compatibility and menu navigation both connected back to Enhanced Input. (Epic Games, n.d.)
 
-- nused it to understand how Enhanced Input worked
+- unused it to understand how Enhanced Input worked
 - looked at Input Actions and Input Mapping Contexts
 - linked it back to controller compatibility and menu navigation
 - used it to compare what should be happening with what was happening in my own project
@@ -70,7 +70,7 @@ The YouTube tutorial was useful because I did try to make a controls remap syste
 
 This source was still useful, even though the final feature did not stay in the game. It helped me get part of the way there, but it also showed me how much version differences can affect Unreal tutorials. That was probably the biggest limitation of this source.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/o-r6XmLhD8A?si=IVmf2OoxC5n0jQpk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[Watch the tutorial video](https://www.youtube.com/watch?v=o-r6XmLhD8A)
 
 ## Source 4: Academic source – Celia Hodent
 
