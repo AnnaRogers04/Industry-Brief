@@ -38,68 +38,70 @@ I avoided sources that were not really linked to the part of the project I was d
 
 ## Source 1: Game source – Final Spin
 
-Final Spin was my game reference. I used it more as a general comparison point for the kind of game Greedy Piggies sits alongside, rather than for anything technical. Since it is a multiplayer party game on Steam, it was useful for thinking about the kind of experience and presentation that fits that sort of project.
+Final Spin was my game reference. I used it more as a general comparison point for the kind of game Greedy Piggies sits alongside, rather than for anything technical. Since it is a multiplayer party game on Steam, it was useful for thinking about the kind of experience and presentation that fits that sort of project. (CarbonDaisy Entertainment, 2024)
 
-looked at it as a general game reference
-used it to think about player expectations
-used it more for context and inspiration than technical research
-helped me place my menu work in the wider project
+- looked at it as a general game reference
+- used it to think about player expectations
+- used it more for context and inspiration than technical research
+- helped me place my menu work in the wider project
 
 This source was helpful for context, but it had limits because it did not tell me anything about how systems were built. It was more useful for the overall feel of the project than for solving development problems.
 
 ## Source 2: Documentation source – Enhanced Input in Unreal Engine
 
-Epic’s Enhanced Input documentation was one of the most useful sources for the technical side of this work. Because Epic made Unreal Engine, this was the most reliable source for understanding how the input system was meant to work. It was especially relevant because controller compatibility and menu navigation both connected back to Enhanced Input.
+Epic’s Enhanced Input documentation was one of the most useful sources for the technical side of this work. Because Epic made Unreal Engine, this was the most reliable source for understanding how the input system was meant to work. It was especially relevant because controller compatibility and menu navigation both connected back to Enhanced Input. (Epic Games, n.d.)
 
-used it to understand how Enhanced Input worked
-looked at Input Actions and Input Mapping Contexts
-linked it back to controller compatibility and menu navigation
-used it to compare what should be happening with what was happening in my own project
+- nused it to understand how Enhanced Input worked
+- looked at Input Actions and Input Mapping Contexts
+- linked it back to controller compatibility and menu navigation
+- used it to compare what should be happening with what was happening in my own project
 
 This source was useful because it gave me a clear explanation of the system I was working with. The only real limitation was that documentation does not always help with every project-specific issue, especially when something goes wrong in practice, but it was still the strongest technical source I used.
 
 ## Source 3: Video / tutorial source – control remapping tutorial
 
-The YouTube tutorial was useful because I did try to make a controls remap system for the project. It helped me understand the general structure of that kind of feature and how it could fit into the menu system. The problem was that it was made using an older version of Unreal, so some of it did not translate properly to the version I was using.
+The YouTube tutorial was useful because I did try to make a controls remap system for the project. It helped me understand the general structure of that kind of feature and how it could fit into the menu system. The problem was that it was made using an older version of Unreal, so some of it did not translate properly to the version I was using. (YouTube, n.d.)
 
-followed it while trying to build the remap system
-used it to understand the general setup of a remapping menu
-compared the tutorial to what I was building in my own project
-noticed problems once the version differences became clearer
-ended up removing the feature because I could not get it working in time
+- followed it while trying to build the remap system
+- used it to understand the general setup of a remapping menu
+- compared the tutorial to what I was building in my own project
+- noticed problems once the version differences became clearer
+- ended up removing the feature because I could not get it working in time
 
 This source was still useful, even though the final feature did not stay in the game. It helped me get part of the way there, but it also showed me how much version differences can affect Unreal tutorials. That was probably the biggest limitation of this source.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o-r6XmLhD8A?si=IVmf2OoxC5n0jQpk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Source 4: Academic source – Celia Hodent
 
-Celia Hodent’s work on user experience in video games was useful as an academic source because it gave me a better way to talk about usability and player interaction in games. That linked well to my work, because the whole point of improving controller focus and menu navigation was to make the interface easier for the player to use.
+Celia Hodent’s work on user experience in video games was useful as an academic source because it gave me a better way to talk about usability and player interaction in games. That linked well to my work, because the whole point of improving controller focus and menu navigation was to make the interface easier for the player to use. (Hodent, 2024)
 
-used it to support the importance of UX in games
-linked it to interface clarity and player interaction
-related it to menu usability
-used it to explain why controller navigation matters from the player side
+- used it to support the importance of UX in games
+- linked it to interface clarity and player interaction
+- related it to menu usability
+- used it to explain why controller navigation matters from the player side
 
 This source was useful because it helped me explain why this kind of work matters, not just how it works. It was more theoretical than the other sources, so it was not directly useful for building the system, but it worked well as the academic part of the research.
 
 ## Source 5: Community source – Unreal forum post
 
-The Unreal forum post was useful because it linked to a smaller problem that was close to what I was working on. It focused on opening and closing a menu with the same button, which related quite closely to pause menu flow and controller focus.
+The Unreal forum post was useful because it linked to a smaller problem that was close to what I was working on. It focused on opening and closing a menu with the same button, which related quite closely to pause menu flow and controller focus. (Epic Developer Community Forums, 2021)
 
-looked at it for menu open and close behaviour
-used it when thinking about pause menu flow
-paid attention to focus issues
-related it to controller navigation problems
+- looked at it for menu open and close behaviour
+- used it when thinking about pause menu flow
+- paid attention to focus issues
+- related it to controller navigation problems
 
-This source was helpful because it was practical and close to the problem I was dealing with. At the same time, forum advice is not as reliable as official documentation, so I treated it more as extra support than a main source.
+This source was helpful because it was practical and close to the problem I was dealing with. At the same time, forum advice is not as reliable as official documentation, so I treated it more as extra support than a main source. 
 
 ## Source 6: Background source – reWASD controller guide
 
-The reWASD guide was more of a background source than a main one. I used it to think more generally about controller setup and controller usability on PC, rather than as a direct Unreal Engine source.
+The reWASD guide was more of a background source than a main one. I used it to think more generally about controller setup and controller usability on PC, rather than as a direct Unreal Engine source. (reWASD, 2018)
 
-used it as general background research
-looked at controller setup from the player side
-used it to think more broadly about controller usability
-treated it as extra context rather than a core source
+- used it as general background research
+- looked at controller setup from the player side
+- used it to think more broadly about controller usability
+- treated it as extra context rather than a core source
 
 This source was less important than the Unreal documentation, but it still helped as general background research. Its main limitation was that it was not directly about building systems in Unreal, so it was more useful for context than implementation.
 
@@ -245,4 +247,18 @@ I also should have looked into Steam controller support much earlier. At the sta
 
 ## Bibliography
 
+- CarbonDaisy Entertainment (2024) FINAL SPIN. Steam. Available at: [https://store.steampowered.com/app/2954260/FINAL_SPIN/](https://store.steampowered.com/app/2954260/FINAL_SPIN/) (Accessed: 21 April 2026).
+
+- Epic Developer Community Forums (2021) Close menu with same button as opening. Available at: [https://forums.unrealengine.com/t/close-menu-with-same-button-as-opening/485710/13](https://forums.unrealengine.com/t/close-menu-with-same-button-as-opening/485710/13) (Accessed: 21 April 2026).
+
+- Epic Games (n.d.) Enhanced Input in Unreal Engine. Available at: [https://dev.epicgames.com/documentation/unreal-engine/enhanced-input-in-unreal-engine](https://dev.epicgames.com/documentation/unreal-engine/enhanced-input-in-unreal-engine)
+ (Accessed: 21 April 2026).
+
+- Hodent, C. (2024) ‘Cognitive Psychology Applied to User Experience in Video Games’. In: Lee, N. (ed.) Encyclopedia of Computer Graphics and Games. Cham: Springer, pp. 338–344. Available at: [https://doi.org/10.1007/978-3-031-23161-2_53](https://doi.org/10.1007/978-3-031-23161-2_53) (Accessed: 21 April 2026).
+
+- reWASD (2018) The easiest way of how to setup Xbox 360 controller on PC. Available at: [https://www.rewasd.com/blog/post/how-to-setup-xbox-360-controller-on-pc](https://www.rewasd.com/blog/post/how-to-setup-xbox-360-controller-on-pc) (Accessed: 21 April 2026).
+
+- YouTube (n.d.) [Title of your remap tutorial video]. Available at: [https://www.youtube.com/watch?v=o-r6XmLhD8A](https://www.youtube.com/watch?v=o-r6XmLhD8A) (Accessed: 21 April 2026).
+
 ## AI Decleration
+ChatGbt 5.4 was used to help structure this Commentary.
