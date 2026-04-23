@@ -6,15 +6,13 @@
 
 **Student ID:** \ 2315276
 
-**Total Word Count:** \[XXXX]
+**Total Word Count:** \ [2895]
 
 **API Reference Link:** \ [https://annarogers04.github.io/WidgetSwitcher-API/](https://annarogers04.github.io/WidgetSwitcher-API/)
 
-**User Guide Link:** \[URL]
+**Build Link:** [https://store.steampowered.com/app/4463930/Greedy_Piggies/](https://store.steampowered.com/app/4463930/Greedy_Piggies/)
 
-**Build Link:** \[URL or Embed]
-
-**Video Demonstration Link:** \[URL or Embed]
+**Video Demonstration Link:** [https://youtu.be/pE07HoSPoLs](https://youtu.be/pE07HoSPoLs)
 
 ---
 
@@ -38,7 +36,7 @@ I avoided sources that were not really linked to the part of the project I was d
 
 ## Source 1: Game source – Final Spin
 
-Final Spin was my game reference. I used it more as a general comparison point for the kind of game Greedy Piggies sits alongside, rather than for anything technical. Since it is a multiplayer party game on Steam, it was useful for thinking about the kind of experience and presentation that fits that sort of project. (CarbonDaisy Entertainment, 2024)
+Final Spin was my game reference. I used it more as a general comparison point for the kind of game Greedy Piggies sits alongside, rather than for anything technical. Since it is a multiplayer party game on Steam, it was useful for thinking about the kind of experience and presentation that fits that sort of project. (FINAL SPIN on Steam, s.d.)
 
 - looked at it as a general game reference
 - used it to think about player expectations
@@ -49,7 +47,7 @@ This source was helpful for context, but it had limits because it did not tell m
 
 ## Source 2: Documentation source – Enhanced Input in Unreal Engine
 
-Epic’s Enhanced Input documentation was one of the most useful sources for the technical side of this work. Because Epic made Unreal Engine, this was the most reliable source for understanding how the input system was meant to work. It was especially relevant because controller compatibility and menu navigation both connected back to Enhanced Input. (Epic Games, n.d.)
+Epic’s Enhanced Input documentation was one of the most useful sources for the technical side of this work. Because Epic made Unreal Engine, this was the most reliable source for understanding how the input system was meant to work. It was especially relevant because controller compatibility and menu navigation both connected back to Enhanced Input. (Enhanced Input in UE5 | Tutorial, 2022)
 
 - unused it to understand how Enhanced Input worked
 - looked at Input Actions and Input Mapping Contexts
@@ -60,7 +58,7 @@ This source was useful because it gave me a clear explanation of the system I wa
 
 ## Source 3: Video / tutorial source – control remapping tutorial
 
-The YouTube tutorial was useful because I did try to make a controls remap system for the project. It helped me understand the general structure of that kind of feature and how it could fit into the menu system. The problem was that it was made using an older version of Unreal, so some of it did not translate properly to the version I was using. (YouTube, n.d.)
+The YouTube tutorial was useful because I did try to make a controls remap system for the project. It helped me understand the general structure of that kind of feature and how it could fit into the menu system. The problem was that it was made using an older version of Unreal, so some of it did not translate properly to the version I was using. (Unreal Engine 5.4 - Enhanced Input System Complete Remapping Menu, 2024)
 
 - followed it while trying to build the remap system
 - used it to understand the general setup of a remapping menu
@@ -85,19 +83,19 @@ This source was useful because it helped me explain why this kind of work matter
 
 ## Source 5: Community source – Unreal forum post
 
-The Unreal forum post was useful because it linked to a smaller problem that was close to what I was working on. It focused on opening and closing a menu with the same button, which related quite closely to pause menu flow and controller focus. (Epic Developer Community Forums, 2021)
+The Unreal Engine forum posts were useful because they addressed smaller, practical problems closely related to my implementation. These included handling menu open and close behaviour with a single input, managing widget focus, and understanding how widget switchers function. All of these topics directly relate to controller-based UI navigation and menu flow.
 
-- looked at it for menu open and close behaviour
-- used it when thinking about pause menu flow
-- paid attention to focus issues
-- related it to controller navigation problems
+- reviewed solutions for opening and closing menus using the same input (Close menu with same button as opening - Programming & Scripting / UI, 2024)
+- used discussions to inform pause menu flow and state handling
+- examined approaches to setting and maintaining widget focus (how to set the focus on a widget - Programming & Scripting / UI, 2015)
+- explored how widget switchers can manage UI transitions (I was wondering how Widget Switchers work - Programming & Scripting / UI, 2015)
+- related these ideas to controller navigation and focus consistency
 
-This source was helpful because it was practical and close to the problem I was dealing with. At the same time, forum advice is not as reliable as official documentation, so I treated it more as extra support than a main source. 
+These sources were helpful because they provided practical, experience-based solutions that closely matched the issues encountered during development. However, as community forum posts are not formally verified, they are less reliable than official Unreal Engine documentation. For this reason, they were used as supporting references rather than primary sources.extra support than a main source. 
 
 ## Source 6: Background source – reWASD controller guide
 
-The reWASD guide was more of a background source than a main one. I used it to think more generally about controller setup and controller usability on PC, rather than as a direct Unreal Engine source. (reWASD, 2018)
-
+The reWASD guide was more of a background source than a main one. I used it to think more generally about controller setup and controller usability on PC, rather than as a direct Unreal Engine source. (The easiest way of how to setup Xbox 360 controller on PC, s.d.)
 - used it as general background research
 - looked at controller setup from the player side
 - used it to think more broadly about controller usability
@@ -117,22 +115,26 @@ My work on the project focused on the menu and UI side, especially controller co
 
 One of the main things I worked on was creating controller focus for the menus. This mattered because the UI could look correct visually but still feel awkward to use if the focus was not clear. I had to think about which button should be selected first, how focus would move between options, and how to make that easy for the player to follow.
 
-- Image to use here: a screenshot of the pause menu with one button clearly highlighted while using a controller. This helps show where the controller focus is and how the player would move through the menu.
-Caption: Figure X: Pause menu showing controller focus on a selected button.
+![alt text](<Screenshot 2026-04-23 011314.png>)
+
+_**Figure 1**:** Shows the code used to focus each widget. The code was set on a specific button to gain original focus from and this then allowed gamepad to work._
 
 ### widget switcher
 
 I also built a widget switcher for the in-game pause menu. I mainly did this to keep the widgets in the same place and make the menu system more streamlined. Instead of opening separate menus in a less organised way, the widget switcher let me keep the layout consistent while changing the content inside it. This made the pause menu easier to manage and helped the UI feel cleaner overall.
 
-- Image to use here: a screenshot of the in-game pause menu with one section active, such as the main pause screen, options, or controls. This should show that the layout stays in the same place while the content changes.
-Caption: Figure X: Widget switcher used in the in-game pause menu.
+<img width="625" height="590" alt="image-1" src="https://github.com/user-attachments/assets/f5a08725-7e17-4308-a21e-10675acb8dba" />
+
+_**Figure 2:** Shows a simplifed version of the widget swicther code, Its done in a mermaid diagram and shows the flow of the switcher._
 
 ### controller navigation
 
 As the work developed, I also spent time improving controller compatibility more generally. This meant checking whether menus could actually be navigated properly, whether focus stayed where it needed to, and whether the player could move through the UI without getting stuck. A lot of this came from trial and error rather than from a fixed plan at the start. Some parts worked quickly, while others only improved once I had tested them in engine and seen how they behaved in practice.
 
-- Image to use here: a clean screenshot of the full menu layout in a more finished state. This works well as an overview image to show how the UI was structured overall.
-Caption: Figure X: Final menu layout showing the structure of the UI system.
+![alt text](<ezgif.com-video-to-gif-converter (15).gif>)
+
+_**Figure 3:** Shows a snippet of me testing the controls in engine and making sure the widget focus is working correctly as well as the widget switcher. This made sure controller navigation was working smoothly._
+
 ---
 # technical approach
 
@@ -142,15 +144,13 @@ Most of the methods I used were technical rather than creative, because this par
 
 One of the main things I tried was making the UI work properly with controller input instead of just mouse input. That was one of the less familiar parts of the process because it meant thinking more carefully about focus, navigation order, and how the player moves through menus. It changed the way I approached the UI, because I had to stop thinking about it only as something visual and start thinking about how it would actually feel to use with a controller.
 
-- Image to use here: a screenshot of the pause menu or options menu while being navigated with a controller. This should support the point that the UI was being tested and designed around controller use, not just mouse input.
-Caption: Figure X: Menu system tested with controller-based navigation.
-
 ### remap system
 
 I also tried building a controls remap system. This was more experimental for me because it was something I had not built before, and it meant following a tutorial while adapting it to my own project. I managed to get parts of it working, but in the end I had to remove it because I would not have been able to fix it properly in time. Even though it did not stay in the final version, it still changed my approach because it made me more aware of how version differences in Unreal can affect systems like Enhanced Input.
 
-- Image to use here: a screenshot of the remap system while it was still in development, even if it was unfinished or not working properly. This works as proof that the feature was attempted before being removed.
-Caption: Figure X: Early version of the controls remap system before it was removed.
+ ![alt text](<Screenshot 2026-04-11 145021.png>)
+
+_**Figure 4:** Shows a verson of the controls menu where gamepad and keyboard and mouse inputs werre possible but it was repeating inputs for no reason._
 
 ## Did you experience any technical challenges?
 
@@ -165,14 +165,17 @@ Caption: Figure X: Testing controller focus and menu navigation in the pause men
 
 The remap system caused the biggest issue. I followed a tutorial for it, but the video was made for an older version of Unreal, while this project was made in Unreal Engine 5.6.1. Because of that, parts of the Enhanced Input setup were noticeably different, and this started causing conflicts once I had added all the controls into the Input Mapping Context. I spent time trying to work around it, but eventually I had to remove the feature because I was not going to be able to fix it properly before the deadline.
 
-- Image to use here: a screenshot of the remap system bug, broken setup, or another visible problem from testing. This works best if the issue is obvious enough to support the paragraph.
-Caption: Figure X: Problem encountered while testing the controls remap system.
+![alt text](<Screenshot 2026-04-11 041821.png>)
+![alt text](<Screenshot 2026-04-11 040753.png>)
+
+_**Figure 5 and 6:** Shows when the controls menu broke and the inputs either werent showing up, they were reapeating or half showing half not._
 
 ## reflection on the issue
 
 That part of the process was frustrating, but it was still useful because it showed me the limits of relying too heavily on a tutorial without checking how well it matched the version I was using. It also made me more confident in focusing on the parts of the system that were working well, like the widget switcher and controller navigation, rather than spending too much time trying to force in something that was not ready.
+
 ---
-### Testing
+# Testing
 
 ## What testing methods did you use?
 
@@ -184,15 +187,13 @@ I also tested the build through Steam, because it needed to work properly there 
 
 Part of the testing involved checking how the pause menu behaved in the actual scene rather than on its own. This was important because the menu needed to feel like part of the game while it was running, not just like a separate UI element.
 
-- Image to use here: a screenshot of the pause menu open in the actual game scene. Try to use a wider in-game shot here so it feels different from the closer UI screenshots in the implementation section.
-Caption: Figure X: Pause menu tested in the game scene.
+![alt text](<Screenshot 2026-04-09 141655.png>)
+
+_**Figure 7:** Shows me testing the game in engine after setting up the widget switcher properly, as shown the pause menu shows on the character select menu which is the lobby, this was not planned and shouldnt have happened._
 
 ### steam testing
 
 Testing through Steam became one of the most important parts of this stage because it showed that controller support is currently not working properly there. Since the final build needs controller support through Steam, this is an important issue to mention.
-
-- Image to use here: a screenshot of the game running through Steam, preferably showing the Steam overlay, launch state, or build environment so it feels different from the Unreal screenshots.
-Caption: Figure X: Build tested through Steam.
 
 ## What were your key goals in testing?
 
@@ -226,7 +227,7 @@ Overall, testing helped keep the focus on the parts of the system that were stro
 | Steam controller support | Build testing    | Whether controller input worked properly through Steam        | Controller currently does not work properly in Steam | Marked as an issue that still needs fixing  |
 
 
-Caption: Figure X: Testing summary for controller focus, menu navigation, widget switching, and Steam controller support.
+**Figure X:** Testing summary for controller focus, menu navigation, widget switching, and Steam controller support.
 
 ---
 # Critical Reflection 
@@ -247,18 +248,21 @@ I also should have looked into Steam controller support much earlier. At the sta
 
 ## Bibliography
 
-- CarbonDaisy Entertainment (2024) FINAL SPIN. Steam. Available at: [https://store.steampowered.com/app/2954260/FINAL_SPIN/](https://store.steampowered.com/app/2954260/FINAL_SPIN/) (Accessed: 21 April 2026).
+- FINAL SPIN on Steam (s.d.) At: [https://store.steampowered.com/app/2954260/FINAL_SPIN/](https://store.steampowered.com/app/2954260/FINAL_SPIN/) (Accessed  23/04/2026).
 
-- Epic Developer Community Forums (2021) Close menu with same button as opening. Available at: [https://forums.unrealengine.com/t/close-menu-with-same-button-as-opening/485710/13](https://forums.unrealengine.com/t/close-menu-with-same-button-as-opening/485710/13) (Accessed: 21 April 2026).
+- Close menu with same button as opening - Programming & Scripting / UI (2024) At: [https://forums.unrealengine.com/t/close-menu-with-same-button-as-opening/485710/13](https://forums.unrealengine.com/t/close-menu-with-same-button-as-opening/485710/13) (Accessed  23/04/2026).
 
-- Epic Games (n.d.) Enhanced Input in Unreal Engine. Available at: [https://dev.epicgames.com/documentation/unreal-engine/enhanced-input-in-unreal-engine](https://dev.epicgames.com/documentation/unreal-engine/enhanced-input-in-unreal-engine)
- (Accessed: 21 April 2026).
+- Enhanced Input in UE5 | Tutorial (2022) At: [https://dev.epicgames.com/community/learning/tutorials/eD13/unreal-engine-enhanced-input-in-ue5](https://dev.epicgames.com/community/learning/tutorials/eD13/unreal-engine-enhanced-input-in-ue5) (Accessed  22/04/2026).
 
-- Hodent, C. (2024) ‘Cognitive Psychology Applied to User Experience in Video Games’. In: Lee, N. (ed.) Encyclopedia of Computer Graphics and Games. Cham: Springer, pp. 338–344. Available at: [https://doi.org/10.1007/978-3-031-23161-2_53](https://doi.org/10.1007/978-3-031-23161-2_53) (Accessed: 21 April 2026).
+- Hodent, C. (2024) 'Cognitive Psychology Applied to User Experience in Video Games' In: Encyclopedia of Computer Graphics and Games. Springer, Cham. pp.338–344. At: [https://link.springer.com/rwe/10.1007/978-3-031-23161-2_53](https://link.springer.com/rwe/10.1007/978-3-031-23161-2_53) (Accessed  23/04/2026).
 
-- reWASD (2018) The easiest way of how to setup Xbox 360 controller on PC. Available at: [https://www.rewasd.com/blog/post/how-to-setup-xbox-360-controller-on-pc](https://www.rewasd.com/blog/post/how-to-setup-xbox-360-controller-on-pc) (Accessed: 21 April 2026).
+- How to set the focus on a widget - Programming & Scripting / UI (2015) At: [https://forums.unrealengine.com/t/how-to-set-the-focus-on-a-widget/304225](https://forums.unrealengine.com/t/how-to-set-the-focus-on-a-widget/304225) (Accessed  22/04/2026).
 
-- YouTube (n.d.) [Title of your remap tutorial video]. Available at: [https://www.youtube.com/watch?v=o-r6XmLhD8A](https://www.youtube.com/watch?v=o-r6XmLhD8A) (Accessed: 21 April 2026).
+-   I was wondering how Widget Switchers work - Programming & Scripting / UI (2015) At: [https://forums.unrealengine.com/t/i-was-wondering-how-widget-switchers-work/304307/3](https://forums.unrealengine.com/t/i-was-wondering-how-widget-switchers-work/304307/3) (Accessed  22/04/2026).
+
+- The easiest way of how to setup Xbox 360 controller on PC (s.d.) At: [https://www.rewasd.com/blog/post/how-to-setup-xbox-360-controller-on-pc](https://www.rewasd.com/blog/post/how-to-setup-xbox-360-controller-on-pc) (Accessed  22/04/2026).
+
+- Unreal Engine 5.4 - Enhanced Input System Complete Remapping Menu (2024) Directed by Émile. At: [https://www.youtube.com/watch?v=o-r6XmLhD8A](https://www.youtube.com/watch?v=o-r6XmLhD8A) (Accessed  22/04/2026).
 
 ## AI Decleration
 ChatGbt 5.4 was used to help structure this Commentary.
